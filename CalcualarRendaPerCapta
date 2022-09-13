@@ -1,0 +1,16 @@
+#Teste de Python
+
+#Calcula renda per capta
+def calcularRenda(pessoas,renda):
+    return renda/pessoas
+
+# Pedindo Informações ao ususario
+nome = str(input("Insira seu nome: "))
+idade = int(input("Insira sua idade: "))
+renda = float(input("Insira o valor do seu salario: "))
+pessoas = float(input("Possui quantos dependentes?"))
+perCapta= calcularRenda(pessoas,renda)
+
+print(nome, ", sua renda Per Capta eh", perCapta, "voce possui ", pessoas , "dependentes com ", idade, "anos")
+
+
