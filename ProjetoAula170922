@@ -1,0 +1,61 @@
+import math
+#Função de 100 centavos
+def calculaCemCentavo(x):
+    x = valor /100
+    return x
+
+
+# FUNÇÃO 5 CENTAVOS
+def calculaCincoCentavo(x):
+    x = valor /5
+
+    return x
+
+# FUNÇÃO 1 CENTAVOS
+def calculaUmCentavo(x):
+    x = valor /1
+
+    return x
+
+# FUNÇÃO 10 CENTAVOS
+def calculaDezCentavo(x):
+    x = valor /10
+
+    return x
+
+# FUNÇÃO 25 CENTAVOS
+def calculaVinteCincoCentavo(x):
+    x = valor /25
+
+    return x
+
+#FUNÇÃO CALCUALR MENOR QUANTIDADE
+def calcularMenorQuantidade(valor):
+    var1 =calculaUmCentavo(valor)
+    var2 =calculaCincoCentavo(valor)
+    var3 =calculaDezCentavo(valor)
+    var4 =calculaVinteCincoCentavo(valor)
+    var5 =calculaCemCentavo(valor)
+    return min(var1,var2,var3,var4,var5)
+
+
+def real(valor):
+    var = calcularMenorQuantidade(valor)
+    var6 = var // 1
+    print(var6, " de UM REAL")
+    return
+
+def centavos(valor):
+    var11 = calcularMenorQuantidade(valor)
+    var7 = var11 // 10
+
+    print(var7, " de centavo")
+    return
+
+#MAIN
+valor = eval(input("Insira um valor EM centavos : "))
+real(valor)
+centavos(valor)
+
+
+
