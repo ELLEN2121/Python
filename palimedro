@@ -1,0 +1,13 @@
+print("***** insira 5 digitos para verificar se eh um palimedro")
+dig1 = input("digito 1: ")
+dig2 = input("digito 2: ")
+dig3 = input("digito 3: ")
+dig4 = input("digito 4: ")
+dig5 = input("digito 5: ")
+print("o numero digitado foi ", (dig1+dig2+dig3+dig4+dig5))
+if dig1==dig5:
+    if dig2==dig4: 
+        print ("O numero eh um palimedro")
+    
+else: 
+    print(" O NUMERO NAO EH UM PALIMEDRO")
