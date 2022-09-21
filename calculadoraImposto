@@ -1,0 +1,16 @@
+def inss(salario,aliquota=8):
+    desconto = salario*(aliquota/100)
+    return desconto
+    
+def impostoRenda(salario,aliquota=11):
+    desconto = salario*(aliquota/100)
+    return desconto
+    
+
+    
+    
+salario = int(input("INSIRA SEU SALARIO BRUTO \n"))
+print("****************** CALCULADORA DE IMPOSTO DE RENDA *****************")
+print("O desconto do INSS eh de :", inss(salario))
+print("O desconto de IR eh:" ,impostoRenda(salario))
+print ("O salario liquido eh", salario - ((inss(salario)+impostoRenda(salario))))
