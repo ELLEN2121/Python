@@ -1,0 +1,15 @@
+import math
+
+#Calcula a distancia
+def distancia(x1,x2,y1,y2):
+    p1 = ((x2-x1)**2)
+    p2 = ((y2-y1)**2)
+    #Raiz Quadrada
+    distancia = math.sqrt(p1+p2)
+    return distancia
+
+#Capturar duas informações ao mesmo tempo do usuario
+x1, y1 = float(input("Insira o valor de x1: ")), float(input("Insira o valor de y1: "))
+x2, y2 = float(input("Insira o valor de x2: ")), float(input("Insira o valor de y2: "))
+
+print("{:.4f}".format(distancia(x1,x2,y1,y2)))
