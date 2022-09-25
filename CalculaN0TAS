@@ -1,0 +1,5 @@
+a= 0.000
+b= 0.000
+a, b = float(input("insira a primeira nota: ")),  float(input("insira a segunda nota: "))
+media = ((a*3.5) + (b*7.5))/11
+print("MEDIA = %0.5f"%media)
