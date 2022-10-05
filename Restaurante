@@ -1,0 +1,29 @@
+almoco = ['1 - Carré ao molho','2 - Macarrao ao molho branco', '3 - Feijoada']
+lanche = ['1 - Pao na chapa', '2 - Cafezinho com maizena','Cream Crack com patê de atum']
+jantar = ['1 - Sopa de Abobora', '2 - Lasanha', '3 - Hamburguer Calabresa']
+print("***Seja bem vindo ao Restaurante Caminho do Campo***")
+opcao = int(input("Insira o que deseja: \n [1] Almoço \n [2] Jantar \n [3] Lache \n"))
+if opcao == 1: 
+    for comida in range(len(almoco)):
+        print(almoco[comida])
+if opcao == 2: 
+    for comida in range(len(lanche)):
+        print(almoco[lanche])
+if opcao == 3:
+    for comida in range(len(jantar)):
+        print(comida[jantar])
+
+"""
+lista = [1,2,5,6,7]
+
+for indice in range (len(lista)):
+    lista[indice]= lista[indice]+1
+    print(lista[indice])
+
+
+print("a penultima eh", lista[-2])
+print("a ultima eh", lista[-1])
+
+C[-1] PARA ACESSAR O ULTIMO ELEMENTO DO ARRAY 
+C[-2] PARA ACESSAR O PENULTIMO ELEMENTO DO ARRAY 
+função que descreve quantidade de vetor len(lista)"""
