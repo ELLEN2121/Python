@@ -1,0 +1,30 @@
+a = int(input("Insira o primeiro valor: "))
+b = int(input("Insira o segundo valor: "))
+c = int(input(" 1 - Multiplicacao "+
+              " 2 - divisao "+
+              " 3 - subtracao "+
+              " 4 - Potencia "+
+              " 5 - Resto "+
+              " 6 - Divisao Inteira"))
+if c == 1:
+    valor4 = a*b
+
+if c == 2:
+    valor1 = a / b
+    print(valor1)
+if c == 3:
+    valor3 = a - b
+    print(valor3)
+if c == 4:
+    clotilde = a ** b
+    print(clotilde)
+if c == 5:
+    valor0 = a % b
+    print(valor0)
+if c == 6:
+    valor2 = a // b
+    print(valor2)
+
+
+
+
