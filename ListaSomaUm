@@ -1,0 +1,11 @@
+# len retorna a quantidade que possui a lista
+# Faça um programa que dada uma lista como entrada, soma um no elemento da lista e retorne a resultante
+
+
+lista = [2,3,4,5]
+listaApoio = lista
+quantidade = len(lista)
+for y in range(0,quantidade,1):
+    listaApoio[y] += 1
+    print(listaApoio[y])
+
