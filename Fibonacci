@@ -1,0 +1,11 @@
+nesimoElemento = int(input("Insira o enesimo elemento da serie de Fibonacci"))
+ultimo = 1
+penultimo =1
+
+# Começar, fim, incremento
+for x in range(2,nesimoElemento,1):
+    termo = ultimo + penultimo
+    penultimo = ultimo
+    ultimo = termo
+    print(termo)
+
