@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+
+
+import random 
+cont=0
+soma= 0
+valor = int(input("Insira um valor "))
+while valor != soma: 
+      num1 = random.randint(1,10) 
+      num2 = random.randint(1,10) 
+      soma = num1+num2
+      cont= cont + 1
+      print("a soma foi ", soma)
+print("Foi necessário rodar ",cont," vezes")
