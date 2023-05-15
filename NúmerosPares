@@ -1,0 +1,15 @@
+numpares=[]
+
+n = int(input("Insira o valor de n"))
+
+for i in range(2,n+1,1):
+
+    resul = n % i
+
+    if resul == 0:
+
+       numpares.append(i)
+
+    
+
+print(numpares)
