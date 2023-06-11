@@ -1,0 +1,15 @@
+lista = []
+
+def insercao_lista(valor):
+    lista.append(valor)
+def pergunta():
+    valor = int(input("Insira um valor para ser aloado em memoria: "))
+    insercao_lista(valor)
+    resposta = input("Deseja inserir mais um numero? Digite S ou N")
+    if (resposta.upper() == 'S'):
+        pergunta()
+    else:
+        print("A lista eh a seguinte: " + str(lista))
+
+#Para perguntar
+pergunta()
