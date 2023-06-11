@@ -1,0 +1,110 @@
+
+'''
+#Impementar item por item em uma lista m função
+lista = []
+
+def insercao_lista(valor):
+    lista.append(valor)
+def pergunta():
+    valor = int(input("Insira um valor para ser aloado em memoria: "))
+    insercao_lista(valor)
+    resposta = input("Deseja inserir mais um numero? Digite S ou N")
+    if (resposta.upper() == 'S'):
+        pergunta()
+    else:
+        print("A lista eh a seguinte: " + str(lista))
+
+pergunta()
+
+#Programa que retorna uma lista com todos os números pares entre 2 e um número n, inclusive
+lista = []
+listapares = []
+
+n = int(input("Insira o tamanho da lista"))
+for i in range(0,n,1):
+    lista.append(int(input("Insira o valor para inserir na lista")))
+    if(lista[i]%2==0):
+        listapares.append(lista[i])
+
+
+print("Lista completa: ", lista)
+print("Lista com valores pares: ", listapares)
+
+
+#Retornar True caso o valor 10 pertença à lista, e False caso contrário
+lista = [] * 5
+
+for i in range(0,5,1):
+    lista.append(int(input("Insira o valor na lista")))
+
+resultado = 5 in lista
+#in esta na lista
+#not in nao esta na lista
+print(resultado)
+
+'''
+
+#SPLIT(ELEMENTO PARA FAZER A DISTINÇAÕ) - DIGITAR OS VALORES SEPARADOS POR VIRGULAS
+#COUNT(ELEMENTO) - CONTAR QUANTAS VEZES O ELEMENTO APARECE NA LISTA
+#EXTEND(ELEMENTO) - EXTENDER UMA LISTA
+#INSERT(INDICIE, ELEMENTO)
+#INDEX(ELEMENTO) - LOCALIZAR UM ELEMENTO  E RETORNAR SUA POSIÇÃO
+#DEL - DELETAR UM ELEMENTO NA LISTA
+#POP (POSIÇÃO) - EXLUIR UM ELEMENT NA POSIÇA ESLHIDA
+
+
+'''Encontrar a primeira ocorrência do elemento de valor 10
+na lista [1, 2, 10, 5, 20] e retornar a posição em que ele foi
+encontrado (sem usar .index( ))
+
+lista = [1, 2, 10, 5, 20]
+e = 0
+if(e in lista):
+    for i in range(0, len(lista),1):
+        if(lista[i]==e):
+            print("O indicie que esta eh ", i)
+else:
+    print("Numero nao está na lista")
+    
+'''
+'''1. Faça um programa que percorre uma lista com o seguinte
+formato: [['Brasil', 'Italia', [10, 9]], ['Brasil', 'Espanha', [5, 7]],
+['Italia', 'Espanha', [7,8]]]. Essa lista indica o número de faltas
+que cada time fez em cada jogo. Na lista acima, no jogo
+entre Brasil e Itália, o Brasil fez 10 faltas e a Itália fez 9. O
+programa deve imprimir na tela:
+(a) o total de faltas do campeonato
+(b) o time que fez mais faltas
+(c) o time que fez menos faltas
+'''
+
+
+lista = [['Brasil', 'Italia', [10, 9]], ['Brasil', 'Espanha', [5, 7]],['Italia', 'Espanha', [7,8]]]
+
+listaAux =[]
+def total_faltas():
+    for i in range(0,3,1):
+        print(lista[i][2])
+        soma = sum(lista[i][2])
+        listaAux.append(soma)
+        somatorio = sum(listaAux)
+    return somatorio
+def time_max_faltas():
+    for i in range(0,3,1):
+        faltas = lista[i][2]
+        if(lista[0][2]>lista[1][2] and lista[2][2]<lista[0][2]):
+            print("eh maior", lista[0][2])
+
+        elif(lista[0][2]<lista[1][2] and lista[2][2]<lista[1][2]):
+            print("eh maior", lista[1][2])
+        elif(lista[0][2]<lista[1][2] and lista[1][2]<lista[2][2]):
+            print("eh maior", lista[2][2])
+
+    # maiorQntFaltas = max(faltas)
+      #  print(maiorQntFaltas)
+
+
+faltas = total_faltas()
+print("O total de faltas equivale a ", faltas)
+listaAux.clear()
+time_max_faltas()
