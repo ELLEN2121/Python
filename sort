@@ -1,0 +1,12 @@
+def selection_sort(lista):
+    n = len(lista)
+    for i in range(n - 1):
+        indice_min = i
+        for j in range(i + 1, n):
+            if lista[j] < lista[indice_min]:
+                indice_min = j
+        lista[i], lista[indice_min] = lista[indice_min], lista[i]
+
+minha_lista = [5, 2, 9, 1, 7]
+selection_sort(minha_lista)
+print(minha_lista)
